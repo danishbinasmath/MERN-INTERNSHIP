@@ -1,0 +1,38 @@
+.zero
+{
+  margin: 50px 200px;
+  background-color: #8B0000;
+}
+.form-center {
+  padding: 50px 50px;
+  display:flex;
+  justify-content: center;
+}
+body
+{
+  color: white;
+  background-color: #E34234;
+  background-size: 50% auto;
+background-origin: padding-box;
+
+}
+label {
+    display: inline-block;
+    width: 125px; /* Adjust the width as needed */
+  }
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: white;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  input[type="radio"] {
+    display: inline;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+  }

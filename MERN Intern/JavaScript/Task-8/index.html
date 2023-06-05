@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task-8 JavaScript</title>
+
+<head>
+    <style>
+        div#output {
+            height: 50px;
+            width: 50px;
+            padding-top: 50px;
+            position: relative;
+            animation: mymove 3.5s infinite;
+            animation-play-state: paused;
+        }
+        
+        h1 {
+            color: rgb(43, 25, 123);
+        }
+        
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+    <div id="output"><img src="img/train.png" alt=""></div>
+    <div style="margin: 100px auto; padding-top: 200px; padding-left: 500px;">
+        <h1>Click the following button to handle animation</h1>
+        <button style='height:25px;width:70px' onclick="playing()">Play</button>
+        <button style='height:25px;width:70px' onclick='pausing() '>Pause</button>
+    </div>
+
+
+    <script>
+        function playing() {
+            document.getElementById("output").style.animationPlayState = "running";
+        }
+
+        function pausing() {
+            document.getElementById("output").style.animationPlayState = "paused";
+        }
+    </script>
+
+
+    </body>
+
+</html>

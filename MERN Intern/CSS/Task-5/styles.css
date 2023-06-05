@@ -1,0 +1,34 @@
+.container {
+    margin: 100px auto;
+    font-size: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+nav.horizontal ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0px;
+    width: 355px;
+    overflow: hidden;
+    background-color: #cfcbcb;
+    border: 2px solid blue;
+}
+
+li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.horizontal li {
+    float: left;
+}
+
+a:hover {
+    background-color: #666464;
+    color: aliceblue;
+}

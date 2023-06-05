@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(235, 235, 152), rgb(235, 151, 235));
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+label.inline {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label>span {
+    grid-column: 1;
+}
+
+label>input,
+label>select {
+    grid-column: 2;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+input {
+    width: 100px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.password-rules {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.password-rules ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.error-message {
+    color: red;
+}

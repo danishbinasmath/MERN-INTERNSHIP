@@ -1,0 +1,60 @@
+.side-nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.green {
+    width: 80px;
+    background-color: #04AA6D;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.green:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s ease;
+}
+
+.red {
+    width: 80px;
+    background-color: #f44336;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.red:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s ease;
+}
+
+.blue {
+    width: 80px;
+    background-color: #2196F3;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.blue:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s ease;
+}
+
+.grey {
+    width: 80px;
+    background-color: darkgrey;
+    height: 80px;
+    border-radius: 0 10px 10px 0;
+}
+
+.grey:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s ease;
+}

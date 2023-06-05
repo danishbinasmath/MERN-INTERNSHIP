@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-8 HTML</title>
+    <style>
+        table {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
+        p {
+            width: 98%;
+        }
+        
+        .field {
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+        .entry {
+            width: 98%;
+        }
+        
+        .gmale {
+            text-align: left;
+        }
+        
+        textarea {
+            width: 98%;
+        }
+        
+        #login {
+            text-align: right;
+        }
+        
+        #reg-btn {
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center; color:blue">Registration form</h2>
+    <table border="1">
+        <tr>
+            <td class="field">First Name</td>
+            <td><input type="text" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">Last Name</td>
+            <td><input type="text" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">Email</td>
+            <td><input type="email" name="email" id="email" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">Password</td>
+            <td><input type="password" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">Re-Enter Password</td>
+            <td><input type="password" class="entry"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="field">Gender</td>
+            <td>
+                <p><input type="radio" id="gmale">Male</p>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="gmale">Female</td>
+        </tr>
+        <tr>
+            <td class="field">Age</td>
+            <td><input type="number" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">Phone Number</td>
+            <td><input type="number" name="phoneNo" id="phoneNo" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">Address</td>
+            <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td class="field"><label for="state">State</label></td>
+            <td><input type="text" name="state" id="state" class="entry"></td>
+        </tr>
+        <tr>
+            <td class="field">
+                <label for="country">Country</label>
+            </td>
+            <td>
+                <select name="country" id="country" class="entry">
+                    <option value="choose" selected>Choose your country</option>
+                    <option value="usa">United States of America</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ind">India</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="field">
+                <label for="lang">Language Known</label>
+            </td>
+            <td>
+                <input type="checkbox" name="lang" id="lang">English
+                <input type="checkbox" name="lang" id="lang">Kannada
+                <input type="checkbox" name="lang" id="lang">Hindi
+                <input type="checkbox" name="lang" id="lang">Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="declaration" id="declaration">Hereby I declare all the given details are true <br><br>
+            </td>
+        </tr>
+        <tr id="login">
+            <td colspan="2">Log in to <a href="https://www.google.com">Google</a> website</td>
+        </tr>
+    </table><br>
+    <div id="reg-btn"><input type="submit" value="Register"></div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-11 JavaScript</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+        <label for="firstName"><span>First Name:</span><input type="text" id="firstName" required></label>
+
+        <label for="lastName"><span>Last Name:</span><input type="text" id="lastName" required></label>
+
+        <label for="email"><span>Email:</span><input type="email" id="email" required></label>
+
+        <label for="password"><span>Password:</span><input type="password" id="password" required></label>
+
+
+        <label for="reenterPassword"><span>Re-enter Password:</span><input type="password" id="reenterPassword" required></label>
+
+        <label><span>Gender:</span></label>
+        <label class="inline">
+      <input type="radio" name="gender" value="male"> Male
+    </label>
+        <label class="inline">
+      <input type="radio" name="gender" value="female"> Female
+    </label>
+
+        <label for="age"><span>Age:</span><input type="number" id="age" required></label>
+
+        <label for="phone"><span>Phone Number:</span><input type="text" id="phone" pattern="[0-9]{10}" required></label>
+
+        <label for="address"><span>Address:</span><input type="text" id="address" required></label>
+
+        <label for="state"><span>State:</span><input type="text" id="state" required></label>
+
+        <label for="country"><span>Country:</span>
+      <select id="country" required>
+        <option value="">Select Country</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="India">India</option>
+        <!-- Add more options here -->
+      </select>
+    </label>
+
+        <label for="language">Language Known:</label>
+        <label class="inline"><input type="radio" name="english" value="english">English</label>
+        <label class="inline"><input type="radio" name="kannada" value="kannada"> Kannada</label>
+        <label class="inline"><input type="radio" name="hindi" value="hindi"> Hindi</label>
+        <label class="inline"><input type="radio" name="telegu" value="telegu"> Telegu</label>
+
+        <label>
+      <input type="checkbox" id="declaration" required> Hereby I declare that all the given details are true.
+    </label>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <div id="errorContainer"></div>
+</body>
+
+</html>

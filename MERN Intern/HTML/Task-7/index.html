@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7 HTML</title>
+    <style>
+        form {
+            display: table;
+            margin: 100px auto;
+            /* to center form */
+        }
+        
+        p {
+            display: table-row;
+        }
+        
+        label {
+            display: table-cell;
+        }
+        
+        input {
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <p>
+            <label for="fname">First Name: &emsp;&emsp;&emsp;&emsp;</label>
+            <input type="text" name="fname" id="fname">
+        </p>
+        <br>
+        <p>
+            <label for="username">Username: &emsp;&emsp;&emsp;&emsp;</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <br>
+        <p>
+            <label for="pwd">Password: &emsp;&emsp;&emsp;&emsp;</label>
+            <input type="password" name="pwd" id="pwd">
+        </p>
+        <br>
+        <p>
+            <label for="repwd">Re-Password: &emsp;&emsp;&emsp;&emsp;</label>
+            <input type="password" name="repwd" id="repwd">
+        </p>
+        <br>
+        <p>
+            <label for="address">Address: &emsp;&emsp;&emsp;&emsp;</label>
+            <input type="text" name="address" id="address">
+        </p>
+        <br>
+        <p>
+            <label for="age">Age: &emsp;&emsp;&emsp;&emsp;</label>
+            <input type="number" name="age" id="age">
+        </p>
+        <br>
+        <p>
+            <label for="gender">Gender: &emsp;&emsp;&emsp;&emsp;</label>
+            <select name="gender" id="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select>
+        </p>
+        <br>
+        <p>
+            <input type="submit" value="Save">
+        </p>
+    </form>
+</body>
+
+</html>
